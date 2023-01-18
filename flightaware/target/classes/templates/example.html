@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Example</title>
+</head>
+<body>
+<h1>Airport names</h1>
+<ul>
+    <li th:each="name : ${names}">
+        <span th:text="${name}"></span>
+    </li>
+</ul>
+</body>
+</html>
